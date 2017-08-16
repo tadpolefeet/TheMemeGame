@@ -1,0 +1,19 @@
+h1 {
+    color: red;
+    font: arial;
+}
+
+.veggie {
+    color: green;
+    font-size: 15;
+}
+
+#first-item {
+    border-top: solid grey;
+    color: red;
+}
+
+#memes {
+
+    color: darkblue;
+}
