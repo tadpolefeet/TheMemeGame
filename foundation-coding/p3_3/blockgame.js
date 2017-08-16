@@ -31,6 +31,7 @@ game.load.image("red", "../assets/red.jpg");
 game.load.image("blue", "../assets/pepe2.png");
 game.load.image("green", "../assets/illuminati.png");
 game.load.image("scope", "../assets/scope.png");
+game.load.audio("triple", "../assets/triple.mp3");
 }
 
 
