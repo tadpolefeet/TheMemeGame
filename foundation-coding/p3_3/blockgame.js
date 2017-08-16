@@ -21,6 +21,7 @@ var block2;
 var block3;
 var type;
 var blocktime = 1;
+var triple = 0;
 
 function preload(){
 
@@ -267,16 +268,19 @@ labelScore.setText(score.toString());
 }
 
 function collide1(){
+  triple++;
 changeScore(5);
 block1.kill();
 }
 
 function collide2(){
+  triple = 0;
 changeScore(-5);
 block2.kill();
 }
 
 function collide3(){
+  triple = 0;
 score = Math.sqrt(score);
 score = Math.round(score);
 labelScore.setText(score.toString());
