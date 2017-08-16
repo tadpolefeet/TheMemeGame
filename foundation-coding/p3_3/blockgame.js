@@ -270,6 +270,8 @@ labelScore.setText(score.toString());
 
 function collide1(){
   triple++;
+  if(triple == 3){triple = 0;
+game.sound.play("triple");}
 changeScore(5);
 block1.kill();
 }
