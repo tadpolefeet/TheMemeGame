@@ -23,6 +23,8 @@ var type;
 var blocktime = 1;
 var triple = 0;
 
+
+
 function preload(){
 
 game.load.image("harambe", "../assets/pepe.png");
@@ -33,10 +35,6 @@ game.load.image("green", "../assets/illuminati.png");
 game.load.image("scope", "../assets/scope.png");
 game.load.audio("triple", "../assets/triple.mp3");
 }
-
-
-
-
 
 
 
@@ -66,6 +64,7 @@ choosespawnlocation
 
 
 }
+
 
 
 
@@ -101,6 +100,8 @@ function update(){
 
 
 
+  
+  
 
 if(player.x > 775){changeScore(-5);
 player.body.velocity.x = -300;
@@ -163,6 +164,8 @@ player.body.velocity.y = 0;
 player.body.velocity.x = 0;
 player.body.velocity.y = 300;
 }
+
+
 
 
 
@@ -238,6 +241,7 @@ else if (type==4){
   if(xyv==1){block2.body.velocity.y = v*400;}
   else{block2.body.velocity.x = v*400;}
 
+  
 }
 else if (type==3){
 
@@ -260,13 +264,15 @@ else{
 
 }
 
-
+  
+ 
 }
 
 function changeScore(x){
 score = score + x;
 labelScore.setText(score.toString());
 }
+
 
 function collide1(){
   triple++;
@@ -276,11 +282,13 @@ changeScore(5);
 block1.kill();
 }
 
+
 function collide2(){
   triple = 0;
 changeScore(-5);
 block2.kill();
 }
+
 
 function collide3(){
   triple = 0;
